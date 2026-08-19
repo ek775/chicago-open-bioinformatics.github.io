@@ -186,6 +186,11 @@ a {
   box-shadow: var(--shadow);
 }
 
+.project-sync-status,
+.project-card__meta {
+  color: var(--muted);
+}
+
 .project-card__status {
   display: inline-flex;
   margin-bottom: 1rem;
@@ -195,6 +200,25 @@ a {
   color: var(--accent);
   font-size: 0.85rem;
   font-weight: 700;
+}
+
+.project-card__link {
+  text-decoration: none;
+}
+
+.project-card__link:hover,
+.project-card__link:focus-visible {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.project-card__meta {
+  margin: 0.75rem 0 0;
+  font-size: 0.95rem;
+}
+
+.project-card--placeholder {
+  grid-column: 1 / -1;
 }
 
 .tag-list {
