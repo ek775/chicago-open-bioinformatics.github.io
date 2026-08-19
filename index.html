@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chicago Open Bioinformatics</title>
+  <meta
+    name="description"
+    content="Chicago Open Bioinformatics is a ChiTownBio meetup for community-built bioinformatics projects, collaboration, and open science."
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__content">
+      <p class="eyebrow">ChiTownBio community meetup</p>
+      <h1>Chicago Open Bioinformatics</h1>
+      <p class="hero__lead">
+        A welcoming home for open-source bioinformatics projects, community lab collaboration,
+        and hands-on learning in Chicago.
+      </p>
+      <div class="hero__actions">
+        <a class="button button--primary" href="#projects">Explore projects</a>
+        <a class="button button--secondary" href="#get-involved">Get involved</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section section--intro">
+      <div class="section__heading">
+        <p class="eyebrow">About the group</p>
+        <h2>Build, share, and learn in the open</h2>
+      </div>
+      <p class="section__copy">
+        Chicago Open Bioinformatics brings together makers, scientists, developers, and curious
+        newcomers to build reusable tools for community biology. This GitHub Pages site highlights
+        active project spaces and makes it easy to discover what the group is working on.
+      </p>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section__heading section__heading--split">
+        <div>
+          <p class="eyebrow">Project showcase</p>
+          <h2>Discover community projects</h2>
+        </div>
+        <label class="search" for="project-search">
+          <span class="search__label">Search projects</span>
+          <input
+            id="project-search"
+            name="project-search"
+            type="search"
+            placeholder="Search by project name, focus area, or keyword"
+            autocomplete="off"
+          >
+        </label>
+      </div>
+
+      <p class="search__summary" id="search-summary" aria-live="polite">
+        Showing all community project spaces.
+      </p>
+
+      <div class="project-grid" id="project-grid">
+        <article class="project-card" data-project-card>
+          <span class="project-card__status">Open for contributors</span>
+          <h3>Open Analysis Workflows</h3>
+          <p>
+            Reproducible notebooks, pipelines, and starter templates for genomics, imaging, and
+            everyday data exploration in the community lab.
+          </p>
+          <ul class="tag-list">
+            <li>genomics</li>
+            <li>workflows</li>
+            <li>notebooks</li>
+          </ul>
+        </article>
+
+        <article class="project-card" data-project-card>
+          <span class="project-card__status">Community showcase</span>
+          <h3>Citizen Science Data Stories</h3>
+          <p>
+            Lightweight tools and visualizations for turning open datasets into stories that local
+            collaborators can understand, remix, and extend.
+          </p>
+          <ul class="tag-list">
+            <li>visualization</li>
+            <li>education</li>
+            <li>open data</li>
+          </ul>
+        </article>
+
+        <article class="project-card" data-project-card>
+          <span class="project-card__status">Prototype space</span>
+          <h3>Lab Automation &amp; Protocol Tools</h3>
+          <p>
+            Project space for shared protocol checklists, sample tracking ideas, and practical
+            software that supports repeatable community lab experiments.
+          </p>
+          <ul class="tag-list">
+            <li>automation</li>
+            <li>protocols</li>
+            <li>lab ops</li>
+          </ul>
+        </article>
+
+        <article class="project-card" data-project-card>
+          <span class="project-card__status">Always expanding</span>
+          <h3>More Projects Coming Soon</h3>
+          <p>
+            This page is ready for new repositories, demos, and experiments as the Chicago Open
+            Bioinformatics community grows.
+          </p>
+          <ul class="tag-list">
+            <li>community</li>
+            <li>meetup</li>
+            <li>open source</li>
+          </ul>
+        </article>
+      </div>
+
+      <p class="empty-state" id="empty-state" hidden>
+        No projects match that search yet. Try another keyword or add a new community idea.
+      </p>
+    </section>
+
+    <section class="section section--accent" id="get-involved">
+      <div class="section__heading">
+        <p class="eyebrow">Get involved</p>
+        <h2>Bring your project, question, or prototype</h2>
+      </div>
+      <div class="info-grid">
+        <div class="info-card">
+          <h3>Show your work</h3>
+          <p>Add new projects here to highlight tools, datasets, experiments, and tutorials.</p>
+        </div>
+        <div class="info-card">
+          <h3>Find collaborators</h3>
+          <p>Use the project list to connect with people interested in analysis, software, and open science.</p>
+        </div>
+        <div class="info-card">
+          <h3>Keep it open</h3>
+          <p>Promote transparent, remixable work that helps the broader ChiTownBio community learn together.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="search.js"></script>
+</body>
+</html>
