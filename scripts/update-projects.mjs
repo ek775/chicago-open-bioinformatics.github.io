@@ -3,6 +3,7 @@ import { readFile, writeFile } from "node:fs/promises";
 const INDEX_PATH = new URL("../index.html", import.meta.url);
 const TOPIC = "chicago-open-bioinformatics";
 const API_URL = "https://api.github.com/search/repositories";
+const MAX_PAGES = 10;
 const GENERATED_START = "<!-- generated-project-cards:start -->";
 const GENERATED_END = "<!-- generated-project-cards:end -->";
 const SYNC_STATUS_PATTERN = /<p class="project-sync-status" id="project-sync-status">[\s\S]*?<\/p>/;
@@ -27,7 +28,7 @@ const fetchRepositories = async () => {
     headers.Authorization = ["Bearer", token].join(" ");
   }
 
-  for (let page = 1; page <= 10; page += 1) {
+  for (let page = 1; page <= MAX_PAGES; page += 1) {
     const url = new URL(API_URL);
     url.searchParams.set("q", `topic:${TOPIC} archived:false is:public`);
     url.searchParams.set("sort", "updated");
@@ -64,7 +65,7 @@ const fetchRepositories = async () => {
         return right.stars - left.stars;
       }
 
-      return left.fullName.localeCompare(right.fullName);
+      return left.fullName.localeCompare(right.fullName, "en");
     });
 };
 
