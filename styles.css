@@ -208,6 +208,11 @@ a {
   transform: translateY(-2px);
 }
 
+.partner-card:focus-visible {
+  outline: 3px solid rgba(15, 98, 254, 0.35);
+  outline-offset: 4px;
+}
+
 .partner-card__media {
   display: flex;
   align-items: center;
