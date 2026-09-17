@@ -37,7 +37,8 @@ a {
 .section,
 .section__heading,
 .project-grid,
-.info-grid {
+.info-grid,
+.partner-grid {
   max-width: 1100px;
   margin: 0 auto;
 }
@@ -162,7 +163,8 @@ a {
 }
 
 .project-grid,
-.info-grid {
+.info-grid,
+.partner-grid {
   display: grid;
   gap: 1.5rem;
   margin-top: 2rem;
@@ -176,14 +178,54 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
+.partner-grid {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
 .project-card,
-.info-card {
+.info-card,
+.partner-card {
   height: 100%;
   padding: 1.5rem;
   border: 1px solid var(--border);
   border-radius: 1.25rem;
   background: var(--surface);
   box-shadow: var(--shadow);
+}
+
+.partner-card {
+  display: grid;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.partner-card__media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: #f8fbff;
+}
+
+.partner-card__logo {
+  width: min(100%, 260px);
+  height: auto;
+  display: block;
+}
+
+.partner-card__content h3 {
+  margin: 0 0 0.75rem;
+}
+
+.partner-card__content p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.partner-card__content .button {
+  margin-top: 1.25rem;
 }
 
 .project-sync-status,
