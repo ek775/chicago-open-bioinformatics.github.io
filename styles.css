@@ -197,6 +197,15 @@ a {
   display: grid;
   gap: 1.25rem;
   align-items: center;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.partner-card:hover,
+.partner-card:focus-visible {
+  border-color: rgba(15, 98, 254, 0.35);
+  box-shadow: 0 22px 48px rgba(15, 36, 82, 0.16);
+  transform: translateY(-2px);
 }
 
 .partner-card__media {
@@ -226,6 +235,7 @@ a {
 
 .partner-card__content .button {
   margin-top: 1.25rem;
+  pointer-events: none;
 }
 
 .project-sync-status,
