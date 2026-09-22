@@ -1,0 +1,1 @@
+cargo:rustc-env=MIME_TYPES_GENERATED_PATH=/home/ek224/chicago-open-bio/chicago-open-bioinformatics.github.io/devserver/target/debug/build/mime_guess-f57c0180ad25f955/out/mime_types_generated.rs

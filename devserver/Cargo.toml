@@ -1,0 +1,13 @@
+[package]
+name = "devserver"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "devserver"
+path = "src/main.rs"
+
+[dependencies]
+axum = "0.8.9"
+tokio = { version = "1.53.1", features = ["full"] }
+tower-http = { version = "0.7.1", features = ["fs"] }
