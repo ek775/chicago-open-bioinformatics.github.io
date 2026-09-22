@@ -38,6 +38,4 @@ This repository contains the source for the GitHub Pages site, including:
 
 ## Visit the site
 
-The public site is available at:
-
-<https://ek775.github.io/chicago-open-bioinformatics.github.io/>
+The public project showcase is published through this repository's GitHub Pages deployment.
