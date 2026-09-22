@@ -1,0 +1,5 @@
+# ignore log files
+devserver/target/debug/incremental/
+
+# ignore other build artifacts
+devserver/target/
